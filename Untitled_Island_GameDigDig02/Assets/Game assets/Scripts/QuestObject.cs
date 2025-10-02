@@ -16,7 +16,7 @@ public class QuestObject : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //QuestManager.Instance.AddQuest(questID);
+        QuestManager.Instance.AddQuest(questID);
     }
 
     // Update is called once per frame
@@ -29,7 +29,7 @@ public class QuestObject : MonoBehaviour
                 currentHold += Time.deltaTime;
                 if(currentHold >= holdTime)
                 {
-                    //QuestManager.Instance.CompleteQuest(questID);
+                    QuestManager.Instance.CompleteQuest(questID);
                     playerInRange = false;
                 }
             }
