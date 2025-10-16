@@ -11,7 +11,7 @@ public class QuestObject : MonoBehaviour
 
     public float currentHold = 0f;
     private bool playerInRange = false;
-    
+    public GameObject Cross;
 
 
 
@@ -33,6 +33,7 @@ public class QuestObject : MonoBehaviour
                 {
                     QuestManager.Instance.CompleteQuest(questID);
                     Destroy(gameObject);
+                    Cross.SetActive(true);
                     playerInRange = false;
                 }
             }
