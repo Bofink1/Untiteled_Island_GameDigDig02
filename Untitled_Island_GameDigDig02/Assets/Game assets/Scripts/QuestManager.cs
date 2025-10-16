@@ -6,7 +6,7 @@ public class QuestManager : MonoBehaviour
     public static QuestManager Instance; // Singleton for easy access
    
     private Dictionary<string, bool> questCompletion = new Dictionary<string, bool>();
-    public float Questscomplteted;
+    public static float Questscomplteted;
     private void Awake()
     {
         if (Instance == null) Instance = this;
@@ -26,6 +26,7 @@ public class QuestManager : MonoBehaviour
             questCompletion[questID] = true;
             Questscomplteted++;
             Debug.Log("Quest " + questID + " completed!");
+            Debug.Log(questCompletion);
         }
     }
 
