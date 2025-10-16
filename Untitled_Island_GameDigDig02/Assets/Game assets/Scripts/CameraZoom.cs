@@ -19,6 +19,7 @@ public class CameraZoom : MonoBehaviour
         {
             freeLookCamera.m_Lens.FieldOfView -= scroll * zoomSpeed;
             freeLookCamera.m_Lens.FieldOfView = Mathf.Clamp(freeLookCamera.m_Lens.FieldOfView, minFOV, maxFOV);
+            
         }
     }
 }
