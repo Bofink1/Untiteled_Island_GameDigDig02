@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class QuestObject : MonoBehaviour
@@ -10,9 +11,10 @@ public class QuestObject : MonoBehaviour
 
     public float currentHold = 0f;
     private bool playerInRange = false;
+    
 
-    
-    
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -30,6 +32,7 @@ public class QuestObject : MonoBehaviour
                 if(currentHold >= holdTime)
                 {
                     QuestManager.Instance.CompleteQuest(questID);
+                    Destroy(gameObject);
                     playerInRange = false;
                 }
             }
@@ -54,4 +57,5 @@ public class QuestObject : MonoBehaviour
             currentHold = 0f;
         }
     }
+    
 }
