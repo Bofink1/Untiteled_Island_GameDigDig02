@@ -6,12 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Envoirmental Scenes/EnviormentScene.unity
+    path: Assets/Game assets/Scenes/Envoirmental Scenes/EnviormentScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
   - enabled: 1
-    path: Assets/Scenes/Technical Scenes/MaxTechTestScene.unity
+    path: Assets/Game assets/Scenes/Technical Scenes/MaxTechTestScene.unity
     guid: 089ffefd4bb540f4c97bd6a078af3fa7
   - enabled: 1
-    path: Assets/Scenes/Main Scenes/EndScene.unity
+    path: Assets/Game assets/Scenes/Main Scenes/EndScene.unity
     guid: 48115431f5baea54283f75446dfeab43
   m_configObjects: {}
