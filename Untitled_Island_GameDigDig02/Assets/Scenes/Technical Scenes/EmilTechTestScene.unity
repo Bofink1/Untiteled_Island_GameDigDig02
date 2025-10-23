@@ -3867,7 +3867,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2afab557b2ed16e4da540fe7b54ba07f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetFogDensity: 0.5
+  targetFogDensity: 0.04
   transitionSpeed: 0.41
   revertOnExit: 1
   originalFogDensity: 0
