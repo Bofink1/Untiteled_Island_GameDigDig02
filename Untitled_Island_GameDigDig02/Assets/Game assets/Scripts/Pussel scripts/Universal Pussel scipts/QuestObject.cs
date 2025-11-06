@@ -12,8 +12,9 @@ public class QuestObject : MonoBehaviour
     public float currentHold = 0f;
     private bool playerInRange = false;
     public GameObject Cross;
+    public bool SpawnSomethingOnPickUp = false;
     public GameObject SpawnOnPickUp;
-
+   
 
 
 
@@ -33,8 +34,11 @@ public class QuestObject : MonoBehaviour
                 currentHold += Time.deltaTime;
                 if(currentHold >= holdTime)
                 {
-                    SpawnOnPickUp.transform.position = transform.position;
-                    SpawnOnPickUp.SetActive(true);
+                    if (SpawnSomethingOnPickUp == true)
+                    {
+                        SpawnOnPickUp.transform.position = transform.position;
+                        SpawnOnPickUp.SetActive(true);
+                    }
                     QuestManager.Instance.CompleteQuest(questID);
                     Destroy(gameObject);
                     Cross.SetActive(true);
