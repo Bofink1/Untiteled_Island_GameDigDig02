@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class QuestObject : MonoBehaviour
 {
@@ -12,9 +13,11 @@ public class QuestObject : MonoBehaviour
     public float currentHold = 0f;
     private bool playerInRange = false;
     public GameObject Cross;
-    public bool SpawnSomethingOnPickUp = false;
     public GameObject SpawnOnPickUp;
-   
+    public Slider progressBar;
+    private Camera mainCamera;
+
+
 
 
 
@@ -22,50 +25,86 @@ public class QuestObject : MonoBehaviour
     void Start()
     {
         QuestManager.Instance.AddQuest(questID);
+        mainCamera = Camera.main;
+        if (progressBar != null)
+        {
+            progressBar.gameObject.SetActive(false);
+            progressBar.value = 0;
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(playerInRange)
+
+
+        if (playerInRange)
         {
             if (Input.GetKey(KeyCode.E))
             {
                 currentHold += Time.deltaTime;
-                if(currentHold >= holdTime)
+                if (progressBar != null)
                 {
-                    if (SpawnSomethingOnPickUp == true)
-                    {
-                        SpawnOnPickUp.transform.position = transform.position;
-                        SpawnOnPickUp.SetActive(true);
-                    }
+                    progressBar.value = currentHold / holdTime;
+                }
+
+                if (currentHold >= holdTime)
+                {
+                    SpawnOnPickUp.transform.position = transform.position;
+                    SpawnOnPickUp.SetActive(true);
                     QuestManager.Instance.CompleteQuest(questID);
                     Destroy(gameObject);
                     Cross.SetActive(true);
                     playerInRange = false;
-                   
+
+                    if (progressBar != null)
+                    {
+                        progressBar.gameObject.SetActive(false);
+                    }
+                }
+            }
+            else if (Input.GetKeyUp(KeyCode.E))
+            {
+                currentHold = 0f;
+                if (progressBar != null)
+                {
+                    progressBar.value = 0f;
                 }
             }
         }
         else
         {
             currentHold = 0f;
+            if (progressBar != null)
+            {
+                progressBar.value = 0f;
+            }
         }
     }
     private void OnTriggerEnter(Collider other)
     {
-        if(other.CompareTag("Player"))
+        if (other.CompareTag("Player"))
         {
             playerInRange = true;
+
+            if (progressBar != null)
+            {
+                progressBar.gameObject.SetActive(true);
+            }
         }
     }
     private void OnTriggerExit(Collider other)
     {
-        if(other.CompareTag("Player"))
+        if (other.CompareTag("Player"))
         {
             playerInRange = false;
             currentHold = 0f;
+            if (progressBar != null)
+            {
+                progressBar.value = 0f;
+                progressBar.gameObject.SetActive(false);
+            }
         }
     }
-    
+
 }
