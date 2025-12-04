@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3fd0dc0dded95cc49afcc0e090eb0b5d, type: 3}
   m_Name: NpcVillageDialogue 1
   m_EditorClassIdentifier: 
-  npcText: (You ask the fisherman where you might find some helpfull resources)
+  npcText: There is a pile of wood outside the back of the old general store, you
+    should be fine taking it.
   options:
-  - text: Continue...
+  - text: Alright...
     nextNode: {fileID: 0}
     objectiveIndex: 0

@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3fd0dc0dded95cc49afcc0e090eb0b5d, type: 3}
   m_Name: NpcVillageDialogue
   m_EditorClassIdentifier: 
-  npcText: (You ask the fisherman where you might find some helpfull resources)
+  npcText: (You ask the villager for help...)
   options:
   - text: Continue...
-    nextNode: {fileID: 0}
+    nextNode: {fileID: 11400000, guid: df84adcbebc28b3438591df7d2653dfb, type: 2}
     objectiveIndex: 0
