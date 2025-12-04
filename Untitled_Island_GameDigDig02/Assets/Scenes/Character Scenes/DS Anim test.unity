@@ -148,7 +148,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 7196df2358a8f5b459d18fc6d1d9339e,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -55.304
+      value: -69.1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7196df2358a8f5b459d18fc6d1d9339e,
         type: 3}
@@ -158,7 +158,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 7196df2358a8f5b459d18fc6d1d9339e,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 184.46
+      value: 156.2
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7196df2358a8f5b459d18fc6d1d9339e,
         type: 3}
@@ -210,6 +210,94 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7196df2358a8f5b459d18fc6d1d9339e, type: 3}
+--- !u!1001 &213530137
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 9b54fb738aeff6a4d931aa747d13271d,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 10.811
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9b54fb738aeff6a4d931aa747d13271d,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 10.811
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9b54fb738aeff6a4d931aa747d13271d,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 10.811
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9b54fb738aeff6a4d931aa747d13271d,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -16.4
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9b54fb738aeff6a4d931aa747d13271d,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -11.524
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9b54fb738aeff6a4d931aa747d13271d,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 195
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9b54fb738aeff6a4d931aa747d13271d,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9b54fb738aeff6a4d931aa747d13271d,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9b54fb738aeff6a4d931aa747d13271d,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9b54fb738aeff6a4d931aa747d13271d,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9b54fb738aeff6a4d931aa747d13271d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9b54fb738aeff6a4d931aa747d13271d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9b54fb738aeff6a4d931aa747d13271d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9b54fb738aeff6a4d931aa747d13271d,
+        type: 3}
+      propertyPath: m_Name
+      value: Brown Clothes Worried Cowboy
+      objectReference: {fileID: 0}
+    - target: {fileID: 5866666021909216657, guid: 9b54fb738aeff6a4d931aa747d13271d,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 06e7eead842f69341ab2bf0c4c1e4556, type: 2}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9b54fb738aeff6a4d931aa747d13271d, type: 3}
 --- !u!1 &263355756
 GameObject:
   m_ObjectHideFlags: 0
@@ -328,6 +416,270 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1001 &284175853
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 557a5d25e61e7f1448f9a35a7152a08c,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 10.811
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 557a5d25e61e7f1448f9a35a7152a08c,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 10.811
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 557a5d25e61e7f1448f9a35a7152a08c,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 10.811
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 557a5d25e61e7f1448f9a35a7152a08c,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 27.400002
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 557a5d25e61e7f1448f9a35a7152a08c,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -11.524
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 557a5d25e61e7f1448f9a35a7152a08c,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 227.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 557a5d25e61e7f1448f9a35a7152a08c,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 557a5d25e61e7f1448f9a35a7152a08c,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 557a5d25e61e7f1448f9a35a7152a08c,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 557a5d25e61e7f1448f9a35a7152a08c,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 557a5d25e61e7f1448f9a35a7152a08c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 557a5d25e61e7f1448f9a35a7152a08c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 557a5d25e61e7f1448f9a35a7152a08c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 557a5d25e61e7f1448f9a35a7152a08c,
+        type: 3}
+      propertyPath: m_Name
+      value: Purple Brown Shirt Sleeping Cowboy
+      objectReference: {fileID: 0}
+    - target: {fileID: 5866666021909216657, guid: 557a5d25e61e7f1448f9a35a7152a08c,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 06e7eead842f69341ab2bf0c4c1e4556, type: 2}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 557a5d25e61e7f1448f9a35a7152a08c, type: 3}
+--- !u!1001 &514491368
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 0ba254043884d224b893d638426ecd8b,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 10.811
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0ba254043884d224b893d638426ecd8b,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 10.811
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0ba254043884d224b893d638426ecd8b,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 10.811
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0ba254043884d224b893d638426ecd8b,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 6.4107018
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0ba254043884d224b893d638426ecd8b,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -11.524
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0ba254043884d224b893d638426ecd8b,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 209.84
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0ba254043884d224b893d638426ecd8b,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0ba254043884d224b893d638426ecd8b,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0ba254043884d224b893d638426ecd8b,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0ba254043884d224b893d638426ecd8b,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0ba254043884d224b893d638426ecd8b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0ba254043884d224b893d638426ecd8b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0ba254043884d224b893d638426ecd8b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0ba254043884d224b893d638426ecd8b,
+        type: 3}
+      propertyPath: m_Name
+      value: Brown Shirt Joyful Cowboy
+      objectReference: {fileID: 0}
+    - target: {fileID: 5866666021909216657, guid: 0ba254043884d224b893d638426ecd8b,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 06e7eead842f69341ab2bf0c4c1e4556, type: 2}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0ba254043884d224b893d638426ecd8b, type: 3}
+--- !u!1001 &687022013
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: ede05337ab1d7984ca34bd17621965c8,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 7.0458
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ede05337ab1d7984ca34bd17621965c8,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 7.0458
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ede05337ab1d7984ca34bd17621965c8,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 7.0458
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ede05337ab1d7984ca34bd17621965c8,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -39.85
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ede05337ab1d7984ca34bd17621965c8,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -6.806
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ede05337ab1d7984ca34bd17621965c8,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 235.21
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ede05337ab1d7984ca34bd17621965c8,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ede05337ab1d7984ca34bd17621965c8,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ede05337ab1d7984ca34bd17621965c8,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ede05337ab1d7984ca34bd17621965c8,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ede05337ab1d7984ca34bd17621965c8,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ede05337ab1d7984ca34bd17621965c8,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ede05337ab1d7984ca34bd17621965c8,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ede05337ab1d7984ca34bd17621965c8,
+        type: 3}
+      propertyPath: m_Name
+      value: Red Shirt Worrysome Sailor
+      objectReference: {fileID: 0}
+    - target: {fileID: 5866666021909216657, guid: ede05337ab1d7984ca34bd17621965c8,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 06e7eead842f69341ab2bf0c4c1e4556, type: 2}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ede05337ab1d7984ca34bd17621965c8, type: 3}
 --- !u!1 &942492263
 GameObject:
   m_ObjectHideFlags: 0
@@ -465,6 +817,446 @@ MonoBehaviour:
     m_MipBias: 0
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
+--- !u!1001 &956401759
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 601be36858c3c8f4ea080551a41ff420,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 7.0458
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 601be36858c3c8f4ea080551a41ff420,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 7.0458
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 601be36858c3c8f4ea080551a41ff420,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 7.0458
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 601be36858c3c8f4ea080551a41ff420,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -60.442
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 601be36858c3c8f4ea080551a41ff420,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -6.806
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 601be36858c3c8f4ea080551a41ff420,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 217.99
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 601be36858c3c8f4ea080551a41ff420,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 601be36858c3c8f4ea080551a41ff420,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 601be36858c3c8f4ea080551a41ff420,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 601be36858c3c8f4ea080551a41ff420,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 601be36858c3c8f4ea080551a41ff420,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 601be36858c3c8f4ea080551a41ff420,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 601be36858c3c8f4ea080551a41ff420,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 601be36858c3c8f4ea080551a41ff420,
+        type: 3}
+      propertyPath: m_Name
+      value: Yellow Shirt Determined Sailor (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5866666021909216657, guid: 601be36858c3c8f4ea080551a41ff420,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 06e7eead842f69341ab2bf0c4c1e4556, type: 2}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 601be36858c3c8f4ea080551a41ff420, type: 3}
+--- !u!1001 &1043494994
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 8beac5ba0068882428bcd3868db7606a,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 7.0458
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8beac5ba0068882428bcd3868db7606a,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 7.0458
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8beac5ba0068882428bcd3868db7606a,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 7.0458
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8beac5ba0068882428bcd3868db7606a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -29.9
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8beac5ba0068882428bcd3868db7606a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -6.806
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8beac5ba0068882428bcd3868db7606a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 244.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8beac5ba0068882428bcd3868db7606a,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8beac5ba0068882428bcd3868db7606a,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8beac5ba0068882428bcd3868db7606a,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8beac5ba0068882428bcd3868db7606a,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8beac5ba0068882428bcd3868db7606a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8beac5ba0068882428bcd3868db7606a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8beac5ba0068882428bcd3868db7606a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8beac5ba0068882428bcd3868db7606a,
+        type: 3}
+      propertyPath: m_Name
+      value: Green Shirt Clueless Sailor
+      objectReference: {fileID: 0}
+    - target: {fileID: 5866666021909216657, guid: 8beac5ba0068882428bcd3868db7606a,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 06e7eead842f69341ab2bf0c4c1e4556, type: 2}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8beac5ba0068882428bcd3868db7606a, type: 3}
+--- !u!1001 &1085715409
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: d433543adfc924046805c55553323c8c,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 10.811
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d433543adfc924046805c55553323c8c,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 10.811
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d433543adfc924046805c55553323c8c,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 10.811
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d433543adfc924046805c55553323c8c,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 49.299995
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d433543adfc924046805c55553323c8c,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -11.524
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d433543adfc924046805c55553323c8c,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 243.6
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d433543adfc924046805c55553323c8c,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d433543adfc924046805c55553323c8c,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d433543adfc924046805c55553323c8c,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d433543adfc924046805c55553323c8c,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d433543adfc924046805c55553323c8c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d433543adfc924046805c55553323c8c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d433543adfc924046805c55553323c8c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d433543adfc924046805c55553323c8c,
+        type: 3}
+      propertyPath: m_Name
+      value: White Shirt Empathic Cowboy
+      objectReference: {fileID: 0}
+    - target: {fileID: 5866666021909216657, guid: d433543adfc924046805c55553323c8c,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 06e7eead842f69341ab2bf0c4c1e4556, type: 2}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d433543adfc924046805c55553323c8c, type: 3}
+--- !u!1001 &1671551196
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: c2b05f79ce57fef44bd5d9bde906a08c,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 7.0458
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c2b05f79ce57fef44bd5d9bde906a08c,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 7.0458
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c2b05f79ce57fef44bd5d9bde906a08c,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 7.0458
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c2b05f79ce57fef44bd5d9bde906a08c,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -50.083
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c2b05f79ce57fef44bd5d9bde906a08c,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -6.806
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c2b05f79ce57fef44bd5d9bde906a08c,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 225.67001
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c2b05f79ce57fef44bd5d9bde906a08c,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c2b05f79ce57fef44bd5d9bde906a08c,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c2b05f79ce57fef44bd5d9bde906a08c,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c2b05f79ce57fef44bd5d9bde906a08c,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c2b05f79ce57fef44bd5d9bde906a08c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c2b05f79ce57fef44bd5d9bde906a08c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c2b05f79ce57fef44bd5d9bde906a08c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c2b05f79ce57fef44bd5d9bde906a08c,
+        type: 3}
+      propertyPath: m_Name
+      value: Blue Shirt Happy Sailor
+      objectReference: {fileID: 0}
+    - target: {fileID: 5866666021909216657, guid: c2b05f79ce57fef44bd5d9bde906a08c,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 06e7eead842f69341ab2bf0c4c1e4556, type: 2}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c2b05f79ce57fef44bd5d9bde906a08c, type: 3}
+--- !u!1001 &2045191268
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 21251cd9bb9cb7b4ebbf618516e93479,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 10.811
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 21251cd9bb9cb7b4ebbf618516e93479,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 10.811
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 21251cd9bb9cb7b4ebbf618516e93479,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 10.811
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 21251cd9bb9cb7b4ebbf618516e93479,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -39
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 21251cd9bb9cb7b4ebbf618516e93479,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -11.524
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 21251cd9bb9cb7b4ebbf618516e93479,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 177.9
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 21251cd9bb9cb7b4ebbf618516e93479,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 21251cd9bb9cb7b4ebbf618516e93479,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 21251cd9bb9cb7b4ebbf618516e93479,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 21251cd9bb9cb7b4ebbf618516e93479,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 21251cd9bb9cb7b4ebbf618516e93479,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 21251cd9bb9cb7b4ebbf618516e93479,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 21251cd9bb9cb7b4ebbf618516e93479,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 21251cd9bb9cb7b4ebbf618516e93479,
+        type: 3}
+      propertyPath: m_Name
+      value: Bronze Shirt Clueless Cowboy
+      objectReference: {fileID: 0}
+    - target: {fileID: 5866666021909216657, guid: 21251cd9bb9cb7b4ebbf618516e93479,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 06e7eead842f69341ab2bf0c4c1e4556, type: 2}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 21251cd9bb9cb7b4ebbf618516e93479, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -472,3 +1264,12 @@ SceneRoots:
   - {fileID: 942492266}
   - {fileID: 263355759}
   - {fileID: 69337363}
+  - {fileID: 1043494994}
+  - {fileID: 687022013}
+  - {fileID: 1671551196}
+  - {fileID: 956401759}
+  - {fileID: 2045191268}
+  - {fileID: 213530137}
+  - {fileID: 514491368}
+  - {fileID: 284175853}
+  - {fileID: 1085715409}
