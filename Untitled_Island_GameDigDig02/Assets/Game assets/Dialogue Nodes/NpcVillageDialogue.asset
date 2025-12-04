@@ -10,13 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3fd0dc0dded95cc49afcc0e090eb0b5d, type: 3}
-  m_Name: CaptainGreeting
+  m_Name: NpcVillageDialogue
   m_EditorClassIdentifier: 
-  npcText: (The captain appears very intoxicated and seems to be in a very bad mood)
+  npcText: (You ask the fisherman where you might find some helpfull resources)
   options:
-  - text: Talk to him...
-    nextNode: {fileID: 11400000, guid: 3bfba9b8cfa12be45b242ec172091cb1, type: 2}
-    objectiveIndex: 0
-  - text: Walk away...
+  - text: Continue...
     nextNode: {fileID: 0}
     objectiveIndex: 0

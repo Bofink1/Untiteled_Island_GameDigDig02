@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3fd0dc0dded95cc49afcc0e090eb0b5d, type: 3}
   m_Name: CaptainGreetingP2
   m_EditorClassIdentifier: 
-  npcText: This also works
+  npcText: AGHH MATEY! MY BIRD IS NOWEHRE TO BE FOUND
   options:
-  - text: Ok
-    nextNode: {fileID: 0}
+  - text: Continue...
+    nextNode: {fileID: 11400000, guid: b48afa6e151baf247a1144f488b9d88d, type: 2}
     objectiveIndex: 0

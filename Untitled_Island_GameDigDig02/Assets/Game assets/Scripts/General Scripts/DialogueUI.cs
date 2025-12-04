@@ -14,8 +14,8 @@ public class DialogueUI : MonoBehaviour
     private CinemachineFreeLook freeLookCamera;
     private float originalXSpeed = 250f;
     private float originalYSpeed = 4f;
-    private float originalWalkSpeed = 6f;
-    private float originalSprintSpeed = 12f;
+    private float originalWalkSpeed = 3f;
+    private float originalSprintSpeed = 6f;
 
 
 
@@ -33,6 +33,7 @@ public class DialogueUI : MonoBehaviour
 
         freeLookCamera.m_XAxis.m_MaxSpeed = originalXSpeed;
         freeLookCamera.m_YAxis.m_MaxSpeed = originalYSpeed;
+        Cursor.visible = false;
     }
 
     public void StartDialogue(DialogueNode node)
@@ -42,6 +43,7 @@ public class DialogueUI : MonoBehaviour
         ThirdPersonMovement.sprintspeed = 0f;
         freeLookCamera.m_XAxis.m_MaxSpeed = 0f;
         freeLookCamera.m_YAxis.m_MaxSpeed = 0f;
+        Cursor.visible = true;
 
 
         currentNode = node;
@@ -78,6 +80,6 @@ public class DialogueUI : MonoBehaviour
         ThirdPersonMovement.sprintspeed = originalSprintSpeed;
         freeLookCamera.m_XAxis.m_MaxSpeed = originalXSpeed;
         freeLookCamera.m_YAxis.m_MaxSpeed = originalYSpeed;
-
+        Cursor.visible = false;
     }
 }
