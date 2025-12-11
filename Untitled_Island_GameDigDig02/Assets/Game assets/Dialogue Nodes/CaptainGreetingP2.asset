@@ -16,4 +16,4 @@ MonoBehaviour:
   options:
   - text: Continue...
     nextNode: {fileID: 11400000, guid: b48afa6e151baf247a1144f488b9d88d, type: 2}
-    objectiveIndex: 0
+    JournalEntry: 

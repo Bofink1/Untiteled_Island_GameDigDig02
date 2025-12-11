@@ -17,4 +17,4 @@ MonoBehaviour:
   options:
   - text: Aye captain!
     nextNode: {fileID: 0}
-    objectiveIndex: 0
+    JournalEntry: '- Captain is mad'

@@ -22,15 +22,26 @@ public class DialogueManager : MonoBehaviour
 
     public void ChooseOption(DialogueOption option)
     {
-        // start quest if assigned
-       // if (option.questToStart != null)
-     //       QuestManager.instance.StartQuest(option.questToStart);
+        Debug.Log("ChooseOption called. Option text: " + option.text);
+        Debug.Log("Journal entry: " + (string.IsNullOrEmpty(option.JournalEntry) ? "EMPTY" : option.JournalEntry));
 
-        // complete quest objective if assigned
-      //  if (option.questToComplete != null)
-        //    QuestManager.instance.CompleteObjective(option.questToComplete, option.objectiveIndex);
+        if (!string.IsNullOrEmpty(option.JournalEntry))
+        {
+            if (JournalUI.instance != null)
+            {
+                Debug.Log("Calling AddJournalEntry on JournalUI instance");
+                JournalUI.instance.AddJournalEntry(option.JournalEntry);
+            }
+            else
+            {
+                Debug.LogWarning("JournalUI instance not found!");
+            }
+        }
+        else
+        {
+            Debug.Log("No journal entry to add for this option");
+        }
 
-        // continue or end dialogue
         if (option.nextNode != null)
         {
             dialogueUI.StartDialogue(option.nextNode);

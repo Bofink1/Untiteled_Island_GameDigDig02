@@ -11,11 +11,11 @@ using UnityEngine;
     public string text; // what the player sees
     public DialogueNode nextNode; // what dialogue comes next
 
-    [Header("Optional Quest Actions")]
-   // public Quest questToStart; // NOT NEEDED FOR THIS GAME
-   // public Quest questToComplete; //  NOT NEEDED FOR THIS GAME
-    public int objectiveIndex; //  which objective to complet
-}
+    [Header("Optional Journal Entry")]
+    [TextArea(4,4)]
+    public string JournalEntry; 
+  
+    }
 
     [CreateAssetMenu(fileName = "New Dialogue Node", menuName = "Dialogue System/Dialogue Node")]
     public class DialogueNode : ScriptableObject
