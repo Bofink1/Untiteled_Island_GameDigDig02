@@ -18,7 +18,8 @@ public class JournalUI : MonoBehaviour
     public string PastJournalText;
     public string NewJournalText;
 
-    private const string ENTRY_SEPARATOR = "\n---\n\n";
+    private const string ENTRY_SEPARATOR = "<br>";
+    private HashSet<string> addedEntries = new HashSet<string>();
 
     private void Awake()
     {
@@ -39,19 +40,27 @@ public class JournalUI : MonoBehaviour
         {
             IsOpen = !IsOpen;
             JournalPanel.SetActive(IsOpen);
-            Debug.Log("Journal toggled: " + (IsOpen ? "Open" : "Closed"));
+          
         }
     }
 
     public void AddJournalEntry(string entry)
     {
-        Debug.Log("AddJournalEntry called with: " + entry);
+        Debug.Log("Added entry:: " + entry);
 
         if (string.IsNullOrEmpty(entry))
         {
             Debug.LogWarning("Journal entry is null or empty!");
             return;
         }
+
+        if (addedEntries.Contains(entry))
+        {
+            Debug.Log("Duplicate entry blocked!");
+            return;
+        }
+
+        addedEntries.Add(entry);
 
         if (!string.IsNullOrEmpty(JournalText))
         {
@@ -77,5 +86,13 @@ public class JournalUI : MonoBehaviour
         {
             Debug.LogError("journalTextDisplay reference is null!");
         }
+    }
+
+    public void ClearJournal()
+    {
+        JournalText = string.Empty;
+        addedEntries.Clear();
+        UpdateJournalDisplay();
+        Debug.Log("Journal cleared");
     }
 }
