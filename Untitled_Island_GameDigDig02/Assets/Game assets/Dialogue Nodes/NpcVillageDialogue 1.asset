@@ -17,4 +17,4 @@ MonoBehaviour:
   options:
   - text: Alright...
     nextNode: {fileID: 0}
-    objectiveIndex: 0
+    JournalEntry: '- The is a pile of wood around the back of the general store'
