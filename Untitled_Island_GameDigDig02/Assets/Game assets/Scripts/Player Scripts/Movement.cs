@@ -23,6 +23,13 @@ public class ThirdPersonMovement : MonoBehaviour
     public float groundDistance = 0.4f;
     public LayerMask groundMask;
 
+    [Header("Stamina Settings")]
+    public float maxStamina = 100f; //maximum stamina
+    public float currentStamina = 100f;
+    public float jumpStaminaCost = 25f; //how much it costs to jump
+    public float staminaRegenRate = 15f; // per second
+    public float jumpStaminaThreshold = 25f; // minimum needed to jump
+
     private Vector3 velocity;
     private bool isGrounded;
 
@@ -76,10 +83,20 @@ public class ThirdPersonMovement : MonoBehaviour
         controller.Move(currentVelocity * Time.deltaTime);
 
         // Jumping
-        if (Input.GetButtonDown("Jump") && isGrounded)
+        if (Input.GetButtonDown("Jump") && isGrounded && currentStamina >= jumpStaminaThreshold)
         {
             velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
             jumpHoldCounter = maxJumpHoldTime;
+            currentStamina -= jumpStaminaCost;
+            Debug.Log(currentStamina);
+        }
+
+        //Stamina cost for jumping
+        if (isGrounded && currentStamina < maxStamina)
+        {
+            currentStamina += staminaRegenRate * Time.deltaTime;
+            currentStamina = Mathf.Clamp(currentStamina, 0f, maxStamina);
+            
         }
 
         // Hold jump for variable height
@@ -98,4 +115,6 @@ public class ThirdPersonMovement : MonoBehaviour
         velocity.y += gravity * Time.deltaTime;
         controller.Move(velocity * Time.deltaTime);
     }
+   
+
 }
