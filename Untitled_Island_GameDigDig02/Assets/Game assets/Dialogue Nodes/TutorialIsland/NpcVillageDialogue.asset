@@ -12,8 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3fd0dc0dded95cc49afcc0e090eb0b5d, type: 3}
   m_Name: NpcVillageDialogue
   m_EditorClassIdentifier: 
-  npcText: (You ask the villager for help...)
+  npcText: Hello!
   options:
-  - text: Continue...
+  - text: (Ask for help)
     nextNode: {fileID: 11400000, guid: df84adcbebc28b3438591df7d2653dfb, type: 2}
-    objectiveIndex: 0
+    JournalEntry: 
+  - text: Walk away...
+    nextNode: {fileID: 0}
+    JournalEntry: 

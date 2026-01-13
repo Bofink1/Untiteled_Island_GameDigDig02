@@ -15,6 +15,6 @@ MonoBehaviour:
   npcText: There is a pile of wood outside the back of the old general store, you
     should be fine taking it.
   options:
-  - text: Alright...
+  - text: Alright, thanks!
     nextNode: {fileID: 0}
     JournalEntry: '- The is a pile of wood around the back of the general store'
