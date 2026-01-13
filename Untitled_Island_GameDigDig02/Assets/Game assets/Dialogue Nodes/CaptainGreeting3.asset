@@ -17,4 +17,5 @@ MonoBehaviour:
   options:
   - text: Aye captain!
     nextNode: {fileID: 0}
-    JournalEntry: '- Captain is mad'
+    JournalEntry: '- The captain has lost his pet parrot. He needs me to find it,
+      otherwise we wont make it of this island acording to him...'

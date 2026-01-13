@@ -8,8 +8,8 @@ public class ThirdPersonMovement : MonoBehaviour
     public Transform cam;
 
     [Header("Movement Settings")]
-    static public float walkspeed = 3f;
-    static public float sprintspeed = 6f;
+    static public float walkspeed = 2f;
+    static public float sprintspeed = 5f;
     public float acceleration = 20f;  // how quickly you accelerate
     public float deceleration = 25f;  // how quickly you decelerate
 
