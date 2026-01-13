@@ -10,12 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3fd0dc0dded95cc49afcc0e090eb0b5d, type: 3}
-  m_Name: NPC2TutorialGreeting 1
+  m_Name: BirdSpotter2
   m_EditorClassIdentifier: 
-  npcText: I suggest looking around the island, you might be able to salvage some
-    stuff.
+  npcText: You said you need to find a parrot?
   options:
-  - text: Sounds good, thanks!
-    nextNode: {fileID: 0}
-    JournalEntry: '- Someone suggested i should search around the island for things
-      to salvage, in order to repair our ship.'
+  - text: Yeah
+    nextNode: {fileID: 11400000, guid: 2b059ef8db249f24b84a7af531d1192d, type: 2}
+    JournalEntry: 

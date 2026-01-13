@@ -10,12 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3fd0dc0dded95cc49afcc0e090eb0b5d, type: 3}
-  m_Name: NPC2TutorialGreeting 1
+  m_Name: BirdSpotter2 1
   m_EditorClassIdentifier: 
-  npcText: I suggest looking around the island, you might be able to salvage some
-    stuff.
+  npcText: Well, i saw one fly by a minute ago. Looks like he was headed towards
+    the shrouded woods, on the big island
   options:
-  - text: Sounds good, thanks!
+  - text: Alright
     nextNode: {fileID: 0}
-    JournalEntry: '- Someone suggested i should search around the island for things
-      to salvage, in order to repair our ship.'
+    JournalEntry: 
