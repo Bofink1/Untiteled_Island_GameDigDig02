@@ -12,5 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3fd0dc0dded95cc49afcc0e090eb0b5d, type: 3}
   m_Name: NPC2TutorialGreeting
   m_EditorClassIdentifier: 
-  npcText: 
-  options: []
+  npcText: Hey !
+  options:
+  - text: (Ask for help)
+    nextNode: {fileID: 11400000, guid: 39b7899651f00f944ad74eb3201a9cea, type: 2}
+    JournalEntry: 
+  - text: Walk away...
+    nextNode: {fileID: 0}
+    JournalEntry: 
