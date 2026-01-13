@@ -4,15 +4,23 @@ using UnityEngine;
 
 public class RandomCharacter : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public List<GameObject> CharacterModels;
+    public Transform SpawnPoint;
+    public GameObject PreModel;
+
+
+    private void Start()
     {
         
+        if (CharacterModels.Count > 0)
+        {
+            Destroy(PreModel);
+            GameObject RandomModel = CharacterModels[Random.Range(0, CharacterModels.Count)];
+            Instantiate(RandomModel, SpawnPoint.position, SpawnPoint.rotation, transform);
+        }
+
+        
+
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

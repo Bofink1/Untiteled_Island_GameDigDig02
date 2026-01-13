@@ -10,10 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3fd0dc0dded95cc49afcc0e090eb0b5d, type: 3}
-  m_Name: NpcVillageDialogue
+  m_Name: BirdSpotter
   m_EditorClassIdentifier: 
-  npcText: (You ask the villager for help...)
+  npcText: Hello!
   options:
-  - text: Continue...
-    nextNode: {fileID: 11400000, guid: df84adcbebc28b3438591df7d2653dfb, type: 2}
-    objectiveIndex: 0
+  - text: (Ask for help)
+    nextNode: {fileID: 11400000, guid: e94230228c9fc2642a80622a2908b97e, type: 2}
+    JournalEntry: 
+  - text: Walk away...
+    nextNode: {fileID: 0}
+    JournalEntry: 
