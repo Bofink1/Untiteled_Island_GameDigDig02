@@ -562,8 +562,8 @@ Transform:
   m_GameObject: {fileID: 252239081}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -40.99, y: 4.83, z: -21.59}
-  m_LocalScale: {x: 1, y: 1, z: 8}
+  m_LocalPosition: {x: -40.99, y: 0.5999999, z: -15.4}
+  m_LocalScale: {x: 1, y: 1, z: 10}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -971,7 +971,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 1
   m_IsActive: 1
 --- !u!64 &480139840
 MeshCollider:
@@ -1054,7 +1054,7 @@ Transform:
   m_GameObject: {fileID: 480139839}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -35.54, y: 4.79, z: -21.61}
+  m_LocalPosition: {x: -35.54, y: 0.56, z: -15.42}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
