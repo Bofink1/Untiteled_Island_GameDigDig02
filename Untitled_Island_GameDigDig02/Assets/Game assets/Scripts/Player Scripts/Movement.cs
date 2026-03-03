@@ -37,13 +37,22 @@ public class ThirdPersonMovement : MonoBehaviour
     private float turnSmoothVelocity;
 
     public Transform groundCheck;
+    private Animator animator;
 
     // Target movement direction & current velocity for smoothing
     private Vector3 targetVelocity;
     private Vector3 currentVelocity;
 
+    private void Start()
+    {
+
+        animator = GetComponent<Animator>();
+
+    }
     void Update()
     {
+
+       // Debug.Log(currentVelocity);
         // Ground Check
         isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
 
@@ -110,6 +119,27 @@ public class ThirdPersonMovement : MonoBehaviour
         {
             jumpHoldCounter = 0f; // stops jump boost
         }
+
+        // animations
+        float speed2 = currentVelocity.magnitude;
+
+        if (speed2 < 0.1f)
+        {
+            // Idle
+            animator.SetFloat("speed", 0);
+        }
+        else if (!Input.GetKey(KeyCode.LeftShift))
+        {
+            // Walk
+            animator.SetFloat("speed", 0.5f);
+        }
+        else
+        {
+            // Run
+            animator.SetFloat("speed", 1f);
+        }
+
+
 
         // Apply gravity
         velocity.y += gravity * Time.deltaTime;

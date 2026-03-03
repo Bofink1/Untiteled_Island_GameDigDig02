@@ -14,7 +14,7 @@ public class FogTrigger : MonoBehaviour
     public bool revertOnExit = true;
 
     public float originalFogDensity;
-    private bool inTrigger = true;
+   // private bool inTrigger = true;
 
 
 
