@@ -41,7 +41,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: ede05337ab1d7984ca34bd17621965c8,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.7071068
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ede05337ab1d7984ca34bd17621965c8,
         type: 3}
@@ -51,7 +51,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: ede05337ab1d7984ca34bd17621965c8,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.7071068
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ede05337ab1d7984ca34bd17621965c8,
         type: 3}
@@ -83,9 +83,32 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 06e7eead842f69341ab2bf0c4c1e4556, type: 2}
-    m_RemovedComponents:
-    - {fileID: 5866666021909216657, guid: ede05337ab1d7984ca34bd17621965c8, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: ede05337ab1d7984ca34bd17621965c8,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8195010248994821777}
   m_SourcePrefab: {fileID: 100100000, guid: ede05337ab1d7984ca34bd17621965c8, type: 3}
+--- !u!1 &2747865789150589621 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: ede05337ab1d7984ca34bd17621965c8,
+    type: 3}
+  m_PrefabInstance: {fileID: 3090323328708759524}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8195010248994821777
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2747865789150589621}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82d26a6171915fb44a4adb4d9e699cfb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 0}
+  movementThreshold: 0.01
