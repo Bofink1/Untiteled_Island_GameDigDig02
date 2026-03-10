@@ -16,7 +16,9 @@ public class RandomCharacter : MonoBehaviour
         {
             Destroy(PreModel);
             GameObject RandomModel = CharacterModels[Random.Range(0, CharacterModels.Count)];
-            Instantiate(RandomModel, SpawnPoint.position, SpawnPoint.rotation, transform);
+            Quaternion offsetRotation = SpawnPoint.rotation * Quaternion.Euler(0, 90, 0);
+            Instantiate(RandomModel, SpawnPoint.position, offsetRotation, transform);
+
         }
 
         
