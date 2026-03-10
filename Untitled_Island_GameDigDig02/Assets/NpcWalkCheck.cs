@@ -1,38 +1,37 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class MovementAnimator : MonoBehaviour
 {
-    public Animator animator; 
+    public Animator animator;
     private Vector3 lastPosition;
-    public float movementThreshold = 0.01f; 
+    public float movementThreshold = 1f;
 
     void Start()
     {
         lastPosition = transform.position;
 
-       
         if (animator == null)
             animator = GetComponent<Animator>();
     }
 
     void Update()
     {
-        
-        float distance = Vector3.Distance(transform.position, lastPosition);
+        Vector3 movement = transform.position - lastPosition;
+        float distance = movement.magnitude;
 
         if (distance > movementThreshold)
         {
+            animator.SetBool("IsWalking", true);
 
-            animator.SetFloat("speed", 1f);
+            
+            movement.y = 0;
+            transform.forward = movement;
         }
         else
         {
-
-            animator.SetFloat("speed", 0f);
+            animator.SetBool("IsWalking", false);
         }
 
-        lastPosition = transform.position; 
+        lastPosition = transform.position;
     }
 }
