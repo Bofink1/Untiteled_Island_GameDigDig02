@@ -42,7 +42,7 @@ public class WalkingNPC : MonoBehaviour
             Vector3 directionToPlayer = player.position - transform.position;
             directionToPlayer.y = 0;
             transform.forward = directionToPlayer.normalized;
-            transform.rotation = Quaternion.LookRotation(dir) * Quaternion.Euler(0, 180, 0);
+            
 
             rb.velocity = new Vector3(0f, rb.velocity.y, 0f);
             return;
