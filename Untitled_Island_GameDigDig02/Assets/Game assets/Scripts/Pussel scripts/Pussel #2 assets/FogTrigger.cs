@@ -30,9 +30,10 @@ public class FogTrigger : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            Debug.Log("Player entered fog zone!");
+            
             StopAllCoroutines();
             StartCoroutine(ChangeFogDensity(targetFogDensity));
+            Debug.Log("Player entered fog zone!");
         }
     }
 
@@ -40,9 +41,10 @@ public class FogTrigger : MonoBehaviour
     {
         if (revertOnExit && other.CompareTag("Player"))
         {
-            Debug.Log("Player exited fog zone!");
+            
             StopAllCoroutines();
             StartCoroutine(ChangeFogDensity(originalFogDensity));
+            Debug.Log("Player exited fog zone!");
         }
     }
 
