@@ -37,7 +37,7 @@ public class WalkingNPC : MonoBehaviour
 
     void Update()
     {
-        if (playerNearby)
+       /* if (playerNearby)
         {
             Vector3 directionToPlayer = player.position - transform.position;
             directionToPlayer.y = 0;
@@ -46,7 +46,7 @@ public class WalkingNPC : MonoBehaviour
 
             rb.velocity = new Vector3(0f, rb.velocity.y, 0f);
             return;
-        }
+        }*/
 
         timer += Time.deltaTime;
         if (returningToCenter && centerPoint != null)
