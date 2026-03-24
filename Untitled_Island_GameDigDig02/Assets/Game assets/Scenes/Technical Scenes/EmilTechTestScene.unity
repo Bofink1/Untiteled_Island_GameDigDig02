@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: -876546973899608171, guid: 9a4f8b418fd24544b8ba2e05c3bbfa70,
+  m_SkyboxMaterial: {fileID: -876546973899608171, guid: 93808393b08954343b1fe1f2b73d5916,
     type: 3}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
@@ -5420,7 +5420,7 @@ Transform:
   m_GameObject: {fileID: 2094330698}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 21.91, y: 0.85, z: 1.58}
+  m_LocalPosition: {x: -7, y: 0.85, z: 1.58}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5441,7 +5441,11 @@ MonoBehaviour:
   targetFogDensity: 0.04
   transitionSpeed: 0.41
   revertOnExit: 1
-  originalFogDensity: 0
+  skyboxInside: {fileID: -876546973899608171, guid: 93808393b08954343b1fe1f2b73d5916,
+    type: 3}
+  skyboxOutside: {fileID: -876546973899608171, guid: 9a4f8b418fd24544b8ba2e05c3bbfa70,
+    type: 3}
+  waterObject: {fileID: 565265284}
 --- !u!1 &2096589176
 GameObject:
   m_ObjectHideFlags: 0
