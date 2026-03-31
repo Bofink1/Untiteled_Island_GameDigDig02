@@ -33,7 +33,7 @@ public class ThirdPersonMovement : MonoBehaviour
     private Vector3 velocity;
     private bool isGrounded;
 
-    public float turnSmoothTime = 0.1f;
+    public float turnSmoothTime = 0.3f;
     private float turnSmoothVelocity;
 
     public Transform groundCheck;
@@ -74,12 +74,22 @@ public class ThirdPersonMovement : MonoBehaviour
         // Calculate target velocity
         if (inputDir.magnitude >= 0.1f)
         {
-            float targetAngle = Mathf.Atan2(inputDir.x, inputDir.z) * Mathf.Rad2Deg + cam.eulerAngles.y;
-            float angle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref turnSmoothVelocity, turnSmoothTime);
-            transform.rotation = Quaternion.Euler(0f, angle, 0f);
+            // Only rotate when moving forward/back
+            if (Mathf.Abs(vertical) > 0.01f)
+            {
+                Vector3 forward = cam.forward;
+                forward.y = 0; // flatten
+                if (forward.sqrMagnitude > 0.01f)
+                {
+                    // Instantly rotate toward camera forward
+                    transform.rotation = Quaternion.LookRotation(forward);
+                }
+            }
 
-            Vector3 moveDir = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;
-            targetVelocity = moveDir * speed;
+            // Move relative to camera
+            Vector3 moveDir = cam.TransformDirection(inputDir);
+            moveDir.y = 0;
+            targetVelocity = moveDir.normalized * speed;
         }
         else
         {
