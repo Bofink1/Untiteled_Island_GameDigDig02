@@ -1322,6 +1322,7 @@ GameObject:
   - component: {fileID: 2921371877592533279}
   - component: {fileID: 5168552357044510832}
   - component: {fileID: 3385569555885506521}
+  - component: {fileID: 7198380049157418605}
   m_Layer: 0
   m_Name: RandomNPC
   m_TagString: Untagged
@@ -1560,6 +1561,27 @@ CapsuleCollider:
   m_Height: 2.4734502
   m_Direction: 1
   m_Center: {x: 0, y: -0.736725, z: 0}
+--- !u!135 &7198380049157418605
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8053977611353875858}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 2.89
+  m_Center: {x: 0, y: 0, z: 3.4116105e-18}
 --- !u!1 &8342148520715190556
 GameObject:
   m_ObjectHideFlags: 0
