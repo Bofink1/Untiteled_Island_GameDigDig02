@@ -10,12 +10,12 @@ public class ThirdPersonMovement : MonoBehaviour
     [Header("Movement Settings")]
     static public float walkspeed = 2f;
     static public float sprintspeed = 5f;
-    public float acceleration = 20f;  // how quickly you accelerate
-    public float deceleration = 25f;  // how quickly you decelerate
+    public float acceleration = 20f;
+    public float deceleration = 25f;
 
     [Header("Jump Settings")]
     public float jumpHeight = 2f;
-    public float maxJumpHoldTime = 0.25f; // max time jump can be held
+    public float maxJumpHoldTime = 0.25f;
     private float jumpHoldCounter = 0f;
 
     [Header("Physics Settings")]
@@ -24,11 +24,11 @@ public class ThirdPersonMovement : MonoBehaviour
     public LayerMask groundMask;
 
     [Header("Stamina Settings")]
-    public float maxStamina = 100f; //maximum stamina
+    public float maxStamina = 100f;
     public float currentStamina = 100f;
-    public float jumpStaminaCost = 25f; //how much it costs to jump
-    public float staminaRegenRate = 15f; // per second
-    public float jumpStaminaThreshold = 25f; // minimum needed to jump
+    public float jumpStaminaCost = 25f;
+    public float staminaRegenRate = 15f;
+    public float jumpStaminaThreshold = 25f;
 
     private Vector3 velocity;
     private bool isGrounded;
@@ -39,27 +39,23 @@ public class ThirdPersonMovement : MonoBehaviour
     public Transform groundCheck;
     private Animator animator;
 
-    // Target movement direction & current velocity for smoothing
     private Vector3 targetVelocity;
     private Vector3 currentVelocity;
 
     private void Start()
     {
-
         animator = GetComponent<Animator>();
-
     }
+
     void Update()
     {
-
-       // Debug.Log(currentVelocity);
         // Ground Check
         isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
 
         if (isGrounded && velocity.y < 0)
         {
             velocity.y = -2f;
-            jumpHoldCounter = 0f; // reset jump hold timer
+            jumpHoldCounter = 0f;
         }
 
         // Input
@@ -74,22 +70,21 @@ public class ThirdPersonMovement : MonoBehaviour
         // Calculate target velocity
         if (inputDir.magnitude >= 0.1f)
         {
-            // Only rotate when moving forward/back
-            if (Mathf.Abs(vertical) > 0.01f)
-            {
-                Vector3 forward = cam.forward;
-                forward.y = 0; // flatten
-                if (forward.sqrMagnitude > 0.01f)
-                {
-                    // Instantly rotate toward camera forward
-                    transform.rotation = Quaternion.LookRotation(forward);
-                }
-            }
-
-            // Move relative to camera
+            // Compute camera-relative movement direction
             Vector3 moveDir = cam.TransformDirection(inputDir);
             moveDir.y = 0;
-            targetVelocity = moveDir.normalized * speed;
+            moveDir.Normalize();
+
+            if (moveDir.sqrMagnitude > 0.01f)
+            {
+                // Smoothly rotate toward actual movement direction
+                float targetAngle = Mathf.Atan2(moveDir.x, moveDir.z) * Mathf.Rad2Deg;
+                float smoothAngle = Mathf.SmoothDampAngle(
+                    transform.eulerAngles.y, targetAngle, ref turnSmoothVelocity, turnSmoothTime);
+                transform.rotation = Quaternion.Euler(0f, smoothAngle, 0f);
+            }
+
+            targetVelocity = moveDir * speed;
         }
         else
         {
@@ -97,7 +92,8 @@ public class ThirdPersonMovement : MonoBehaviour
         }
 
         // Smoothceleration
-        currentVelocity = Vector3.MoveTowards(currentVelocity, targetVelocity, (targetVelocity.magnitude > currentVelocity.magnitude ? acceleration : deceleration) * Time.deltaTime);
+        currentVelocity = Vector3.MoveTowards(currentVelocity, targetVelocity,
+            (targetVelocity.magnitude > currentVelocity.magnitude ? acceleration : deceleration) * Time.deltaTime);
 
         controller.Move(currentVelocity * Time.deltaTime);
 
@@ -110,51 +106,43 @@ public class ThirdPersonMovement : MonoBehaviour
             Debug.Log(currentStamina);
         }
 
-        //Stamina cost for jumping
+        // Stamina regen
         if (isGrounded && currentStamina < maxStamina)
         {
             currentStamina += staminaRegenRate * Time.deltaTime;
             currentStamina = Mathf.Clamp(currentStamina, 0f, maxStamina);
-            
         }
 
         // Hold jump for variable height
         if (Input.GetButton("Jump") && jumpHoldCounter > 0f)
         {
-            velocity.y += -gravity * Time.deltaTime; // keep adding upward force
+            velocity.y += -gravity * Time.deltaTime;
             jumpHoldCounter -= Time.deltaTime;
         }
 
         if (Input.GetButtonUp("Jump"))
         {
-            jumpHoldCounter = 0f; // stops jump boost
+            jumpHoldCounter = 0f;
         }
 
-        // animations
+        // Animations
         float speed2 = currentVelocity.magnitude;
 
         if (speed2 < 0.1f)
         {
-            // Idle
             animator.SetFloat("speed", 0);
         }
         else if (!Input.GetKey(KeyCode.LeftShift))
         {
-            // Walk
             animator.SetFloat("speed", 0.5f);
         }
         else
         {
-            // Run
             animator.SetFloat("speed", 1f);
         }
-
-
 
         // Apply gravity
         velocity.y += gravity * Time.deltaTime;
         controller.Move(velocity * Time.deltaTime);
     }
-   
-
 }
