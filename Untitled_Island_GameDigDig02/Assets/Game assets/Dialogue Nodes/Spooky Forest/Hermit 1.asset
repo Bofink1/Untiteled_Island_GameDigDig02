@@ -10,10 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3fd0dc0dded95cc49afcc0e090eb0b5d, type: 3}
-  m_Name: EMPTYDIALOGUE
+  m_Name: Hermit 1
   m_EditorClassIdentifier: 
-  npcText: ...
+  npcText: The shrouded woods? they lie beyond my hut betwix the two mountains, but
+    do be warned they are not for the faint of heart.
   options:
+  - text: Alright...
+    nextNode: {fileID: 0}
+    JournalEntry: 
   - text: ...
     nextNode: {fileID: 0}
     JournalEntry: 

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3fd0dc0dded95cc49afcc0e090eb0b5d, type: 3}
   m_Name: UselessVillagerGreeting2
   m_EditorClassIdentifier: 
-  npcText: I dont know thing buddy, just let me enjoy the view.
+  npcText: I dont know a thing buddy, jhust let me enjoy the view.
   options:
   - text: ...
     nextNode: {fileID: 0}
