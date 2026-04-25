@@ -7,13 +7,17 @@ using UnityEngine;
     [System.Serializable]
     public class DialogueOption
     {
+    [Header("Dialogue")]
     [TextArea(2, 5)]
     public string text; // what the player sees
     public DialogueNode nextNode; // what dialogue comes next
 
-    [Header("Optional Journal Entry")]
+    [Header("Journal Entry")]
     [TextArea(4,4)]
-    public string JournalEntry; 
+    public string JournalEntry;
+
+    [Header("Ending Stuffs (dont touch)")]
+    public bool IsEnding;
   
     }
 
