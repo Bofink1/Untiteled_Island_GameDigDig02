@@ -7,6 +7,7 @@ public class EndingScript : MonoBehaviour
 {
     
     public GameObject ShipRepair;
+    public GameObject Text;
     private void OnTriggerStay(Collider other)
     {
 
@@ -14,6 +15,7 @@ public class EndingScript : MonoBehaviour
         {
             
             ShipRepair.SetActive(true);
+            Text.SetActive(true);
           // ViewBlock.SetActive(true);
           // SceneManager.LoadScene(sceneBuildIndex, LoadSceneMode.Single);
             
