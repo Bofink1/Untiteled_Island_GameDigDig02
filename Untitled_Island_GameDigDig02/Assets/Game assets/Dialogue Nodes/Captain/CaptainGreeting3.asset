@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: CaptainGreeting3
   m_EditorClassIdentifier: 
   npcText: YOU MUST FIND HIM FOR ME MATEY, OTHERWISE WE WILL NOT MAKE IT OF THIS
-    ISLAND
+    ISLAND!
   options:
   - text: Aye captain!
     nextNode: {fileID: 0}

@@ -5,18 +5,18 @@ using UnityEngine.SceneManagement;
 
 public class EndingScript : MonoBehaviour
 {
-    public int sceneBuildIndex;
-    public GameObject ViewBlock;
+    
+    public GameObject ShipRepair;
     private void OnTriggerStay(Collider other)
     {
 
-        if (QuestManager.Questscomplteted >= 7f)
+        if (QuestManager.Questscomplteted >= 5f)
         {
-            if (Input.GetKeyDown(KeyCode.E)) 
-            {
-                ViewBlock.SetActive(true);
-                SceneManager.LoadScene(sceneBuildIndex, LoadSceneMode.Single);
-            }
+            
+            ShipRepair.SetActive(true);
+          // ViewBlock.SetActive(true);
+          // SceneManager.LoadScene(sceneBuildIndex, LoadSceneMode.Single);
+            
 
         }
 
